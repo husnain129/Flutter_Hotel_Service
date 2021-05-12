@@ -1,5 +1,7 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:hotel_service/screens/detail_screen.dart';
 import 'package:hotel_service/screens/home.dart';
 
 void main() {
@@ -14,7 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SafeArea(child: Home()),
+      initialRoute: '/',
+      routes: {
+        '/':(context)=>Home(),
+        '/detail':(context)=>DetailScreen()
+      },
     );
   }
 }

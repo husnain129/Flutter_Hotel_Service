@@ -21,13 +21,13 @@ class CardContent extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     CustomText(
-                        'Sekartaji Rooms', 0xff333F4C, 20.0, FontWeight.w800),
+                        text:'Sekartaji Rooms',color: 0xff333F4C, size:20.0,weight: FontWeight.w800),
                     SizedBox(height: 5.0),
                     CustomText(
-                        '1.5km from here', 0xffB2BAC2, 18.0, FontWeight.w300),
+                        text:'1.5km from here',color: 0xffB2BAC2,size: 18.0,weight: FontWeight.w300),
                     SizedBox(height: 18.0),
-                    CustomText('Cozy room is near the depock beach', 0xffB2BAC2,
-                        18.0, FontWeight.w300),
+                    CustomText(text:'Cozy room is near the depock beach',color: 0xffB2BAC2,
+                        size:18.0,weight: FontWeight.w300),
                   ],
                 ),
               ),
@@ -83,7 +83,7 @@ class IconContainer extends StatelessWidget {
           Icon(Icons.star_outline,
               color: KIconColor, size: KIconSize),
           SizedBox(width: 10.0),
-          CustomText('4.6', 0xffF09336, 19.0, FontWeight.w900),
+          CustomText(text:'4.6',color:0xffF09336, size:19.0,weight: FontWeight.w900),
         ],
       ),
     );
