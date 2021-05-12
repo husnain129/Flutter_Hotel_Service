@@ -18,12 +18,12 @@ class _HomeState extends State<Home> {
             Expanded(
               flex: 2,
               child: Container(
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('images/6-rem.png'),
-                    fit: BoxFit.cover,
-                  ),
-                ),
+                // decoration: BoxDecoration(
+                //   image: DecorationImage(
+                //     image: AssetImage('images/-rem.png'),
+                //     fit: BoxFit.cover,
+                //   ),
+                // ),
                 width: double.infinity,
                 padding: EdgeInsets.only(
                     top: 20.0, left: 30, right: 30, bottom: 20.0),
