@@ -190,7 +190,7 @@ class DetailExtras extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 8.0),
         child: CustomText(
-            text: text, color: 0xff6995C2, size: 20.0, weight: FontWeight.w400),
+            text: text, color: 0xff6995C2, size: 18.0, weight: FontWeight.w400),
       ),
     );
   }
