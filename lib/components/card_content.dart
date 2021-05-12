@@ -31,24 +31,7 @@ class CardContent extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                child: Row(
-                  children: [
-                    Icon(Icons.star_outlined,
-                        color: KIconColor, size: KIconSize),
-                    Icon(Icons.star_outlined,
-                        color: KIconColor, size: KIconSize),
-                    Icon(Icons.star_outlined,
-                        color: KIconColor, size: KIconSize),
-                    Icon(Icons.star_outlined,
-                        color: KIconColor, size: KIconSize),
-                    Icon(Icons.star_outline,
-                        color: KIconColor, size: KIconSize),
-                    SizedBox(width: 10.0),
-                    CustomText('4.6', 0xffF09336, 19.0, FontWeight.w900),
-                  ],
-                ),
-              ),
+              IconContainer(),
               Container(
                 child: RichText(
                   text: TextSpan(children: [
@@ -75,6 +58,34 @@ class CardContent extends StatelessWidget {
           ),
         )
       ],
+    );
+  }
+}
+
+class IconContainer extends StatelessWidget {
+  const IconContainer({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Row(
+        children: [
+          Icon(Icons.star_outlined,
+              color: KIconColor, size: KIconSize),
+          Icon(Icons.star_outlined,
+              color: KIconColor, size: KIconSize),
+          Icon(Icons.star_outlined,
+              color: KIconColor, size: KIconSize),
+          Icon(Icons.star_outlined,
+              color: KIconColor, size: KIconSize),
+          Icon(Icons.star_outline,
+              color: KIconColor, size: KIconSize),
+          SizedBox(width: 10.0),
+          CustomText('4.6', 0xffF09336, 19.0, FontWeight.w900),
+        ],
+      ),
     );
   }
 }
