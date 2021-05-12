@@ -1,15 +1,14 @@
-
 import 'package:flutter/material.dart';
+import 'package:hotel_service/components/custom_text.dart';
 import 'package:hotel_service/constant.dart';
 
 class CardContent extends StatelessWidget {
- 
   @override
   Widget build(BuildContext context) {
     return Wrap(
       children: [
         Container(
-          padding: EdgeInsets.only(top: 10,bottom: 20),
+          padding: EdgeInsets.only(top: 10, bottom: 20),
           height: 300.0,
           width: 200.0,
           color: Colors.white,
@@ -21,29 +20,14 @@ class CardContent extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Sekartaji Rooms',
-                      style: TextStyle(
-                          color: Color(0xff333F4C),
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.w800),
-                    ),
+                    CustomText(
+                        'Sekartaji Rooms', 0xff333F4C, 20.0, FontWeight.w800),
                     SizedBox(height: 5.0),
-                    Text(
-                      '1.5km from here',
-                      style: TextStyle(
-                          color: Color(0xffB2BAC2),
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.w300),
-                    ),
+                    CustomText(
+                        '1.5km from here', 0xffB2BAC2, 18.0, FontWeight.w300),
                     SizedBox(height: 18.0),
-                    Text(
-                      'Cozy room is near the depock beach',
-                      style: TextStyle(
-                          color: Color(0xffB2BAC2),
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.w300),
-                    ),
+                    CustomText('Cozy room is near the depock beach', 0xffB2BAC2,
+                        18.0, FontWeight.w300),
                   ],
                 ),
               ),
@@ -61,13 +45,7 @@ class CardContent extends StatelessWidget {
                     Icon(Icons.star_outline,
                         color: KIconColor, size: KIconSize),
                     SizedBox(width: 10.0),
-                    Text(
-                      '4.6',
-                      style: TextStyle(
-                          fontWeight: FontWeight.w900,
-                          color: Colors.yellow.shade900,
-                          fontSize: 19.0),
-                    ),
+                    CustomText('4.6', 0xffF09336, 19.0, FontWeight.w900),
                   ],
                 ),
               ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hotel_service/components/custom_text.dart';
 import 'package:hotel_service/components/home_card.dart';
 import 'package:hotel_service/constant.dart';
 
@@ -18,12 +19,6 @@ class _HomeState extends State<Home> {
             Expanded(
               flex: 2,
               child: Container(
-                // decoration: BoxDecoration(
-                //   image: DecorationImage(
-                //     image: AssetImage('images/-rem.png'),
-                //     fit: BoxFit.cover,
-                //   ),
-                // ),
                 width: double.infinity,
                 padding: EdgeInsets.only(
                     top: 20.0, left: 30, right: 30, bottom: 20.0),
@@ -43,7 +38,8 @@ class _HomeState extends State<Home> {
                             radius: 26.0),
                       ],
                     ),
-                    Text("Islamabad, Pak", style: KHomeHeaderPosition),
+                    CustomText(
+                        'Islamabad, Pak', 0xffffffff, 25.0, FontWeight.w800),
                   ],
                 ),
               ),
